@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,78 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.facebook {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.add-post {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 20px 0;
+}
+
+.add-post-btn a {
+  background-color: #050f98;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.post {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.post-link {
+  text-decoration: none;
+}
+
+.post-link:hover .post {
+  border: 1px solid #999;
+}
+
+.post .row {
+  display: flex;
+  gap: 20px;
+}
+
+.post .avatar {
+  width: 48px;
+  height: 48px;
+  background-color: #ccc;
+  border-radius: 36px;
+}
+
+.post .content {
+  font-size: 2em;
+  margin: 10px 0;
+}
+
+.add-post-page textarea {
+  width: 100%;
+  font-family: inherit;
+  margin-bottom: 10px;
+}
+
+.add-post-page button {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: #050f98;
+  color: #fff;
+  border: 0;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.add-post-page button:hover {
+
+  
 }
