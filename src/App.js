@@ -4,6 +4,7 @@ import AddPanel from './components/AddPanel'
 import AddPost from "./components/AddPost";
 import PostList from './components/PostList'
 import PostPage from "./components/PostPage";
+import EditPostPage from "./components/EditPostPage";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
             <Route path="/" element={<PostList />} />
             <Route path="/posts/new" element={<AddPost />} />
             <Route path="/posts/:productId" element={<PostPage />} />
-            
+            <Route path="/edit-post/:productId" element={<EditPostPage />} />
           </Routes>
         </div>
       </div>

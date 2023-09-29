@@ -22,18 +22,10 @@ code {
 }
 
 .add-post {
-  border: 1px solid #ccc;
   padding: 10px;
   display: flex;
   flex-direction: row-reverse;
   margin: 20px 0;
-}
-
-.add-post-btn a {
-  background-color: #050f98;
-  color: #fff;
-  padding: 5px 10px;
-  text-decoration: none;
 }
 
 .post {
@@ -74,18 +66,25 @@ code {
   margin-bottom: 10px;
 }
 
+.post-page-buttons a,
+.post-page-buttons button,
+.add-post-btn a,
 .add-post-page button {
   font-family: inherit;
   font-size: inherit;
-  background-color: #050f98;
+  background-color: #2b39fc;
   color: #fff;
   border: 0;
   padding: 5px 10px;
   cursor: pointer;
   margin-right: 10px;
+  border-radius: 5px;
+  text-decoration: none;
 }
 
+.post-page-buttons a:hover,
+.post-page-buttons button:hover,
+.add-post-btn a:hover,
 .add-post-page button:hover {
-
-  
+  background-color: #1b27d3;
 }

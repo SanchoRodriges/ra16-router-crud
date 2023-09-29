@@ -1,4 +1,3 @@
-import useJsonFetch from "../hooks/useJsonFetch";
 import { useState, useEffect } from 'react';
 import PostListItem from './PostListItem'
 

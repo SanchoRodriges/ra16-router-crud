@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import PostList from './PostList';
 
 function AddPost () {
 
@@ -8,15 +7,17 @@ function AddPost () {
 
   const [postContent, setPostContent] = useState('');
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault();
 
     if (postContent === '') return;
 
-    sendPost();
-    setPostContent('');
+    await sendPost();
 
     navigate('/');
+
+    setPostContent('');
+    
   }
 
   const sendPost = async () => {
@@ -35,6 +36,7 @@ function AddPost () {
       if (!response.ok) {
         throw new Error('Ошибка')
       }
+
     } catch (e) {
       throw new Error('Ошибка')
     }
